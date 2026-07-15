@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>Sirena 21 Inc. | Premium Residential Cleaning Services in Florida</title>
+<meta name="description" content="Sirena 21 Inc. delivers premium, detail-obsessed residential cleaning across Florida — Miami, Orlando, Tampa & beyond. Licensed, insured, eco-friendly. Get your free estimate today.">
+<meta name="keywords" content="residential cleaning Florida, house cleaning Miami, deep cleaning Orlando, Airbnb cleaning Tampa, move out cleaning Florida">
+<link rel="canonical" href="https://www.sirena21.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sirena 21 Inc.">
+<meta property="og:title" content="Sirena 21 Inc. | Premium Residential Cleaning Services in Florida">
+<meta property="og:description" content="Licensed, insured, and detail-obsessed residential cleaning across Florida. See why hundreds of homeowners trust Sirena 21.">
+<meta property="og:image" content="/assets/images/og-cover.jpg">
+<meta property="og:url" content="https://www.sirena21.com/">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sirena 21 Inc. | Premium Residential Cleaning Services in Florida">
+<meta name="twitter:description" content="Licensed, insured, and detail-obsessed residential cleaning across Florida. Get a free estimate.">
+<meta name="twitter:image" content="/assets/images/og-cover.jpg">
+
+<link rel="icon" href="./assets/logosirena.png?v=1" type="image/png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind (Play CDN) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ocean:    { DEFAULT:'#0D3B66', light:'#1296DB', dark:'#092944' },
+          turquoise:{ DEFAULT:'#1296DB', light:'#4DB8E8' },
+          mint:     { DEFAULT:'#F45BA3', light:'#F8A0C9' },
+          slate:    { DEFAULT:'#22313F', soft:'#5B6B78' },
+          cardgray: '#F3F6F8'
+        },
+        fontFamily: {
+          display: ['Poppins','sans-serif'],
+          body: ['Inter','sans-serif']
+        },
+        boxShadow: {
+          soft: '0 10px 30px -10px rgba(13,59,102,0.15)',
+          softer: '0 4px 20px -6px rgba(13,59,102,0.12)',
+          lift: '0 20px 40px -12px rgba(13,59,102,0.28)'
+        },
+        borderRadius: {
+          xl2: '1.5rem'
+        }
+      }
+    }
+  }
+</script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-body text-slate bg-white antialiased">
+
+<!-- ============ SKIP LINK ============ -->
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+
+      <!-- Logo -->
+      <a href="#home" class="flex items-center gap-3 shrink-0" aria-label="Sirena 21 Inc. home">
+        <img src="assets/logosirena.png" alt="Sirena 21 Inc. logo" class="h-14 w-14 object-contain">
+        <span class="hidden sm:block font-display font-700 text-lg text-ocean leading-tight">
+          Sirena 21 <span class="text-turquoise">Inc.</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#areas" class="nav-link">Service Areas</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#videos" class="nav-link">Videos</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center">
+        <a href="#contact" class="btn-primary">Get a Free Estimate</a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button id="menu-btn" class="lg:hidden relative w-11 h-11 flex items-center justify-center rounded-full hover:bg-ocean/5 transition" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <nav class="flex flex-col gap-1 p-6" aria-label="Mobile">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#areas" class="mobile-link">Service Areas</a>
+      <a href="#gallery" class="mobile-link">Gallery</a>
+      <a href="#videos" class="mobile-link">Videos</a>
+      <a href="#testimonials" class="mobile-link">Testimonials</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#contact" class="btn-primary justify-center mt-4">Get a Free Estimate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero-section relative overflow-hidden pt-36 pb-24 lg:pt-44 lg:pb-32">
+    <!-- decorative blobs -->
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+    <div class="sparkle-field" aria-hidden="true">
+      <span class="sparkle s1">✦</span>
+      <span class="sparkle s2">✦</span>
+      <span class="sparkle s3">✦</span>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 relative grid lg:grid-cols-2 gap-16 items-center">
+      <!-- Left -->
+      <div data-animate="fade-right">
+        <span class="eyebrow"><span class="eyebrow-mark">✦</span> Trusted across Florida since 2016</span>
+        <h1 class="font-display font-800 text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.08] text-ocean mt-5">
+          Professional Residential Cleaning, Down to the Last Detail
+        </h1>
+        <p class="mt-6 text-lg text-slate-soft max-w-xl">
+          Sirena 21 brings hotel-grade cleaning standards into your home — reliable teams, eco-friendly products, and a spotless finish you can actually see. Serving homeowners across Florida, one room at a time.
+        </p>
+        <div class="mt-9 flex flex-wrap gap-4">
+          <a href="#contact" class="btn-primary btn-lg">Request a Free Quote</a>
+          <a href="#gallery" class="btn-secondary btn-lg">See Our Work</a>
+        </div>
+
+        <div class="mt-12 flex items-center gap-8">
+          <div>
+            <p class="font-display font-700 text-2xl text-ocean">500+</p>
+            <p class="text-sm text-slate-soft">Homes cleaned</p>
+          </div>
+          <div class="w-px h-10 bg-ocean/10"></div>
+          <div>
+            <p class="font-display font-700 text-2xl text-ocean">4.9<span class="text-base">/5</span></p>
+            <p class="text-sm text-slate-soft">Average rating</p>
+          </div>
+          <div class="w-px h-10 bg-ocean/10"></div>
+          <div>
+            <p class="font-display font-700 text-2xl text-ocean">6+</p>
+            <p class="text-sm text-slate-soft">Years experience</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: hero logo showcase -->
+      <div class="relative" data-animate="fade-left">
+        <div class="hero-logo-wrap floating">
+          <div class="hero-logo-frame">
+            <img src="assets/logosirena.png" alt="Sirena 21 Inc. logo" class="hero-logo-img">
+          </div>
+        </div>
+
+        <!-- floating badge card -->
+        <div class="floating-badge" data-animate="scale-in">
+          <div class="flex items-center gap-3">
+            <div class="badge-icon">★</div>
+            <div>
+              <p class="font-display font-700 text-slate leading-tight">4.9 / 5 rating</p>
+              <p class="text-xs text-slate-soft">from 320+ Florida homeowners</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-badge floating-badge-2" data-animate="scale-in">
+          <div class="flex items-center gap-3">
+            <div class="badge-icon badge-icon-mint">✓</div>
+            <div>
+              <p class="font-display font-700 text-slate leading-tight text-sm">Licensed &amp; Insured</p>
+              <p class="text-xs text-slate-soft">Fully bonded team</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C320,100 1120,0 1440,50 L1440,100 L0,100 Z"/></svg>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section id="why-us" class="section-pad bg-white">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="section-head" data-animate="fade-up">
+        <span class="eyebrow"><span class="eyebrow-mark">✦</span> Why Sirena 21</span>
+        <h2 class="section-title">The Little Things Are the Whole Job</h2>
+        <p class="section-sub">Every visit follows the same disciplined standard — because trust is built one spotless corner at a time.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+        <!-- card -->
+        <article class="feature-card" data-animate="fade-up" data-delay="0">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h3 class="feature-title">Reliable, Always</h3>
+          <p class="feature-text">Same trusted team, same high standard, every single visit — rain or shine.</p>
+        </article>
+
+        <article class="feature-card" data-animate="fade-up" data-delay="100">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 4v5c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V7l7-4z"/></svg>
+          </div>
+          <h3 class="feature-title">Licensed &amp; Bonded</h3>
+          <p class="feature-text">Fully licensed and insured across Florida, so your home is always protected.</p>
+        </article>
+
+        <article class="feature-card" data-animate="fade-up" data-delay="200">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 14a4 4 0 10-8 0"/><circle cx="12" cy="7" r="3"/><path d="M4 21c0-3 3.5-5 8-5s8 2 8 5"/></svg>
+          </div>
+          <h3 class="feature-title">Experienced Team</h3>
+          <p class="feature-text">Background-checked professionals trained on our exact detail checklist.</p>
+        </article>
+
+        <article class="feature-card" data-animate="fade-up" data-delay="0">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </div>
+          <h3 class="feature-title">Flexible Scheduling</h3>
+          <p class="feature-text">Weekly, biweekly, monthly, or one-time — book around your life, not ours.</p>
+        </article>
+
+        <article class="feature-card" data-animate="fade-up" data-delay="100">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 019-3 5 5 0 019 3c0 4.5-4 8-10 11z"/></svg>
+          </div>
+          <h3 class="feature-title">100% Satisfaction</h3>
+          <p class="feature-text">Not happy with a spot? We come back and make it right, free of charge.</p>
+        </article>
+
+        <article class="feature-card" data-animate="fade-up" data-delay="200">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C8 6 5 9.5 5 13.5A7 7 0 0019 13.5C19 9.5 16 6 12 2z"/></svg>
+          </div>
+          <h3 class="feature-title">Eco-Friendly Products</h3>
+          <p class="feature-text">Safe for kids, pets, and the planet — without compromising on results.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="section-pad bg-cardgray">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="section-head" data-animate="fade-up">
+        <span class="eyebrow"><span class="eyebrow-mark">✦</span> Services</span>
+        <h2 class="section-title">A Cleaning Plan for Every Kind of Home</h2>
+        <p class="section-sub">From a weekly refresh to a full move-out deep clean, choose the service that fits your space.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14" id="services-grid">
+        <!-- Services injected via markup for SEO -->
+        <article class="service-card" data-animate="fade-up" data-delay="0">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v4H4zM4 10h16v10H4z"/></svg></div>
+          <h3 class="service-title">Regular Cleaning</h3>
+          <p class="service-text">Routine upkeep that keeps every room fresh, dusted, and organized.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </article>
+
+        <article class="service-card" data-animate="fade-up" data-delay="50">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20l6-6M14 4l6 6M9 9l6 6M4 4l4 4M20 20l-4-4"/></svg></div>
+          <h3 class="service-title">Deep Cleaning</h3>
+          <p class="service-text">A top-to-bottom reset for baseboards, grout, appliances, and every hidden corner.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </article>
+
+        <article class="service-card" data-animate="fade-up" data-delay="100">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21l6-6M3 21v-5M3 21h5M21 3l-6 6M21 3h-5M21 3v5"/></svg></div>
+          <h3 class="service-title">Move-In Cleaning</h3>
+          <p class="service-text">Start fresh in a spotless, sanitized home before the boxes even arrive.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </article>
+
+        <article class="service-card" data-animate="fade-up" data-delay="150">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 3l-6 6M21 3v5M21 3h-5M3 21l6-6M3 21v-5M3 21h5"/></svg></div>
+          <h3 class="service-title">Move-Out Cleaning</h3>
+          <p class="service-text">Leave your space in perfect condition for the next owner — or your deposit.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </article>
+
+        <article class="service-card" data-animate="fade-up" data-delay="0">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10l9-7 9 7v10a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg></div>
+          <h3 class="service-title">Airbnb Cleaning</h3>
+          <p class="service-text">Fast, reliable turnovers between guests, built around your booking calendar.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </article>
+
+        <article class="service-card" data-animate="fade-up" data-delay="50">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4M9 7h1M14 7h1M9 11h1M14 11h1"/></svg></div>
+          <h3 class="service-title">Apartment Cleaning</h3>
+          <p class="service-text">Efficient, thorough cleans tailored to condos and apartment living.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </article>
+
+        <article class="service-card" data-animate="fade-up" data-delay="100">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></div>
+          <h3 class="service-title">Office Cleaning</h3>
+          <p class="service-text">Keep your home office or small workspace sharp, sanitized, and client-ready.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </article>
+
+        <article class="service-card" data-animate="fade-up" data-delay="150">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21h16M6 21V9l6-6 6 6v12M9 21v-6h6v6"/></svg></div>
+          <h3 class="service-title">Post-Construction</h3>
+          <p class="service-text">Dust, debris, and residue removed so your renovated space shines like new.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE AREAS ============ -->
+  <section id="areas" class="section-pad bg-white">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="section-head" data-animate="fade-up">
+        <span class="eyebrow"><span class="eyebrow-mark">✦</span> Service Areas</span>
+        <h2 class="section-title">Proudly Cleaning Homes Across Central Florida</h2>
+        <p class="section-sub">Currently serving Orange County and Osceola County — find your neighborhood below.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-10 mt-14 items-start">
+
+        <!-- List side -->
+        <div class="lg:col-span-2" data-animate="fade-right">
+
+          <label for="area-search" class="sr-only">Search your neighborhood</label>
+          <div class="area-search-wrap">
+            <svg viewBox="0 0 24 24" class="area-search-icon" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+            <input type="text" id="area-search" placeholder="Search your neighborhood..." autocomplete="off">
+          </div>
+
+          <div class="county-tabs" role="tablist" aria-label="Counties served">
+            <button class="county-tab active" data-county="orange" role="tab" aria-selected="true" aria-controls="panel-orange">
+              <span class="county-tab-dot dot-orange"></span> Orange County
+              <span class="county-count" id="count-orange"></span>
+            </button>
+            <button class="county-tab" data-county="osceola" role="tab" aria-selected="false" aria-controls="panel-osceola">
+              <span class="county-tab-dot dot-osceola"></span> Osceola County
+              <span class="county-count" id="count-osceola"></span>
+            </button>
+          </div>
+
+          <div class="county-panel" id="panel-orange" role="tabpanel" data-county="orange">
+            <div class="area-chip-grid">
+              <div class="area-chip" data-city="Orlando"><span class="area-dot dot-orange"></span>Orlando</div>
+              <div class="area-chip" data-city="Winter Garden"><span class="area-dot dot-orange"></span>Winter Garden</div>
+              <div class="area-chip" data-city="Windermere"><span class="area-dot dot-orange"></span>Windermere</div>
+              <div class="area-chip" data-city="Ocoee"><span class="area-dot dot-orange"></span>Ocoee</div>
+              <div class="area-chip" data-city="Apopka"><span class="area-dot dot-orange"></span>Apopka</div>
+              <div class="area-chip" data-city="Winter Park"><span class="area-dot dot-orange"></span>Winter Park</div>
+              <div class="area-chip" data-city="Maitland"><span class="area-dot dot-orange"></span>Maitland</div>
+              <div class="area-chip" data-city="Eatonville"><span class="area-dot dot-orange"></span>Eatonville</div>
+              <div class="area-chip" data-city="Belle Isle"><span class="area-dot dot-orange"></span>Belle Isle</div>
+              <div class="area-chip" data-city="Edgewood"><span class="area-dot dot-orange"></span>Edgewood</div>
+              <div class="area-chip" data-city="Oakland"><span class="area-dot dot-orange"></span>Oakland</div>
+              <div class="area-chip" data-city="Lake Buena Vista"><span class="area-dot dot-orange"></span>Lake Buena Vista</div>
+              <div class="area-chip" data-city="Bay Lake"><span class="area-dot dot-orange"></span>Bay Lake</div>
+              <div class="area-chip" data-city="Doctor Phillips"><span class="area-dot dot-orange"></span>Doctor Phillips</div>
+              <div class="area-chip" data-city="Hunters Creek"><span class="area-dot dot-orange"></span>Hunters Creek</div>
+              <div class="area-chip" data-city="Horizon West"><span class="area-dot dot-orange"></span>Horizon West</div>
+              <div class="area-chip" data-city="Pine Hills"><span class="area-dot dot-orange"></span>Pine Hills</div>
+              <div class="area-chip" data-city="Azalea Park"><span class="area-dot dot-orange"></span>Azalea Park</div>
+              <div class="area-chip" data-city="Union Park"><span class="area-dot dot-orange"></span>Union Park</div>
+              <div class="area-chip" data-city="Conway"><span class="area-dot dot-orange"></span>Conway</div>
+              <div class="area-chip" data-city="Gotha"><span class="area-dot dot-orange"></span>Gotha</div>
+              <div class="area-chip" data-city="Bithlo"><span class="area-dot dot-orange"></span>Bithlo</div>
+              <div class="area-chip" data-city="Christmas"><span class="area-dot dot-orange"></span>Christmas</div>
+              <div class="area-chip" data-city="Zellwood"><span class="area-dot dot-orange"></span>Zellwood</div>
+              <div class="area-chip" data-city="Tangerine"><span class="area-dot dot-orange"></span>Tangerine</div>
+            </div>
+          </div>
+
+          <div class="county-panel hidden" id="panel-osceola" role="tabpanel" data-county="osceola">
+            <div class="area-chip-grid">
+              <div class="area-chip" data-city="Kissimmee"><span class="area-dot dot-osceola"></span>Kissimmee</div>
+              <div class="area-chip" data-city="St. Cloud"><span class="area-dot dot-osceola"></span>St. Cloud</div>
+              <div class="area-chip" data-city="Celebration"><span class="area-dot dot-osceola"></span>Celebration</div>
+              <div class="area-chip" data-city="Poinciana"><span class="area-dot dot-osceola"></span>Poinciana</div>
+              <div class="area-chip" data-city="Buenaventura Lakes"><span class="area-dot dot-osceola"></span>Buenaventura Lakes</div>
+              <div class="area-chip" data-city="Campbell"><span class="area-dot dot-osceola"></span>Campbell</div>
+              <div class="area-chip" data-city="Harmony"><span class="area-dot dot-osceola"></span>Harmony</div>
+            </div>
+          </div>
+
+          <p class="area-empty hidden" id="area-empty">No neighborhood matches "<span id="area-empty-term"></span>" yet — but we may still reach you. <a href="#contact">Ask us</a>.</p>
+
+          <a href="#contact" class="btn-secondary mt-8">Check My Area</a>
+        </div>
+
+        <!-- Map side -->
+        <div class="lg:col-span-3 relative" data-animate="fade-left">
+          <div class="map-widget" id="map-widget">
+
+            <svg id="county-map" viewBox="0 0 640 620" role="img" aria-label="Map of Central Florida with a pin for every neighborhood Sirena 21 serves">
+              <defs>
+                <pattern id="mapGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+                  <path d="M28 0H0V28" fill="none" stroke="#0D3B66" stroke-opacity="0.06" stroke-width="1"/>
+                </pattern>
+              </defs>
+
+              <rect x="0" y="0" width="640" height="620" rx="28" fill="#F3F6F8"/>
+              <rect x="0" y="0" width="640" height="620" rx="28" fill="url(#mapGrid)"/>
+
+              <!-- major roads, for map flavor -->
+              <path d="M20,560 C160,470 260,430 340,340 C420,250 500,160 610,60" fill="none" stroke="#0D3B66" stroke-opacity="0.12" stroke-width="5" stroke-linecap="round"/>
+              <text x="520" y="120" class="map-road-label">I-4</text>
+              <path d="M348,10 C330,140 300,260 302,360 C304,440 320,520 296,600" fill="none" stroke="#0D3B66" stroke-opacity="0.1" stroke-width="4" stroke-linecap="round"/>
+              <text x="352" y="30" class="map-road-label">Florida's Turnpike</text>
+
+              <!-- county divider -->
+              <path d="M60,392 C200,378 420,406 580,384" fill="none" stroke="#0D3B66" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="6 6"/>
+              <text x="320" y="45" class="map-county-label" data-county="orange">ORANGE COUNTY</text>
+              <text x="320" y="590" class="map-county-label map-county-label-osceola" data-county="osceola">OSCEOLA COUNTY</text>
+
+              <!-- compass -->
+              <g class="map-compass" transform="translate(590,55)">
+                <circle r="22" fill="#fff" stroke="#0D3B66" stroke-opacity="0.15"/>
+                <path d="M0,-13 L4.5,0 L0,13 L-4.5,0 Z" fill="#0D3B66" fill-opacity="0.5"/>
+                <text x="0" y="-27" class="map-compass-label">N</text>
+              </g>
+
+              <!-- ================= ORANGE COUNTY PINS ================= -->
+              <g class="map-pin map-pin-hub" data-city="Orlando" data-county="orange" tabindex="0" transform="translate(320,300)">
+                <circle r="13" class="pin-pulse"/><circle r="7.5" class="pin-dot pin-dot-hub"/>
+                <text y="-19" class="pin-label pin-label-hub">Orlando</text>
+              </g>
+              <g class="map-pin" data-city="Winter Park" data-county="orange" tabindex="0" transform="translate(350,262)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Maitland" data-county="orange" tabindex="0" transform="translate(344,230)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Eatonville" data-county="orange" tabindex="0" transform="translate(326,244)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Apopka" data-county="orange" tabindex="0" transform="translate(286,186)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Zellwood" data-county="orange" tabindex="0" transform="translate(260,148)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Tangerine" data-county="orange" tabindex="0" transform="translate(274,134)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Ocoee" data-county="orange" tabindex="0" transform="translate(252,276)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Winter Garden" data-county="orange" tabindex="0" transform="translate(210,270)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Oakland" data-county="orange" tabindex="0" transform="translate(196,290)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Windermere" data-county="orange" tabindex="0" transform="translate(206,332)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Horizon West" data-county="orange" tabindex="0" transform="translate(170,352)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Gotha" data-county="orange" tabindex="0" transform="translate(232,300)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Pine Hills" data-county="orange" tabindex="0" transform="translate(286,280)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Azalea Park" data-county="orange" tabindex="0" transform="translate(366,306)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Union Park" data-county="orange" tabindex="0" transform="translate(392,290)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Conway" data-county="orange" tabindex="0" transform="translate(345,347)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Belle Isle" data-county="orange" tabindex="0" transform="translate(356,367)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Edgewood" data-county="orange" tabindex="0" transform="translate(330,340)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Hunters Creek" data-county="orange" tabindex="0" transform="translate(314,386)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Lake Buena Vista" data-county="orange" tabindex="0" transform="translate(244,374)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Bay Lake" data-county="orange" tabindex="0" transform="translate(222,390)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Doctor Phillips" data-county="orange" tabindex="0" transform="translate(254,354)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Bithlo" data-county="orange" tabindex="0" transform="translate(432,288)"><circle r="4.5" class="pin-dot"/></g>
+              <g class="map-pin" data-city="Christmas" data-county="orange" tabindex="0" transform="translate(452,266)"><circle r="4.5" class="pin-dot"/></g>
+
+              <!-- ================= OSCEOLA COUNTY PINS ================= -->
+              <g class="map-pin map-pin-hub" data-city="Kissimmee" data-county="osceola" tabindex="0" transform="translate(300,430)">
+                <circle r="13" class="pin-pulse pin-pulse-osceola"/><circle r="7.5" class="pin-dot pin-dot-hub pin-dot-osceola"/>
+                <text y="-19" class="pin-label pin-label-hub">Kissimmee</text>
+              </g>
+              <g class="map-pin" data-city="St. Cloud" data-county="osceola" tabindex="0" transform="translate(342,452)"><circle r="4.5" class="pin-dot pin-dot-osceola"/></g>
+              <g class="map-pin" data-city="Celebration" data-county="osceola" tabindex="0" transform="translate(252,414)"><circle r="4.5" class="pin-dot pin-dot-osceola"/></g>
+              <g class="map-pin" data-city="Poinciana" data-county="osceola" tabindex="0" transform="translate(252,472)"><circle r="4.5" class="pin-dot pin-dot-osceola"/></g>
+              <g class="map-pin" data-city="Buenaventura Lakes" data-county="osceola" tabindex="0" transform="translate(312,402)"><circle r="4.5" class="pin-dot pin-dot-osceola"/></g>
+              <g class="map-pin" data-city="Campbell" data-county="osceola" tabindex="0" transform="translate(286,414)"><circle r="4.5" class="pin-dot pin-dot-osceola"/></g>
+              <g class="map-pin" data-city="Harmony" data-county="osceola" tabindex="0" transform="translate(378,482)"><circle r="4.5" class="pin-dot pin-dot-osceola"/></g>
+            </svg>
+
+            <!-- Florida locator inset: real state silhouette for geographic context -->
+            <div class="locator-box" aria-hidden="true">
+              <svg viewBox="0 0 200 220" class="locator-svg">
+                <path d="M20,26 L68,15 C84,11 96,17 101,30 L102,54 C138,60 158,76 168,101 C178,127 180,152 167,177 C157,196 141,206 131,196 C124,189 121,176 116,181 C109,189 100,196 92,191 C81,183 79,169 86,156 C71,141 61,121 55,101 C48,80 46,60 40,46 C34,35 26,32 20,26 Z"
+                      fill="#0D3B66" fill-opacity="0.14" stroke="#0D3B66" stroke-opacity="0.4" stroke-width="2"/>
+                <circle cx="132" cy="207" r="1.6" fill="#0D3B66" fill-opacity="0.4"/>
+                <circle cx="140" cy="212" r="1.3" fill="#0D3B66" fill-opacity="0.35"/>
+                <circle cx="147" cy="216" r="1" fill="#0D3B66" fill-opacity="0.3"/>
+                <circle class="locator-pulse" cx="100" cy="88" r="6"/>
+                <circle class="locator-dot" cx="100" cy="88" r="5"/>
+              </svg>
+              <span class="locator-caption">Central Florida<br>service area</span>
+            </div>
+
+            <!-- Tooltip shown on pin / chip hover -->
+            <div class="map-tooltip" id="map-tooltip" role="tooltip"></div>
+          </div>
+
+          <div class="map-legend">
+            <span><i class="legend-dot dot-orange"></i>Orange County</span>
+            <span><i class="legend-dot dot-osceola"></i>Osceola County</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery" class="section-pad bg-cardgray">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="section-head" data-animate="fade-up">
+        <span class="eyebrow"><span class="eyebrow-mark">✦</span> Gallery</span>
+        <h2 class="section-title">Before &amp; After, Room by Room</h2>
+        <p class="section-sub">Real transformations from real Florida homes. Click any photo for a closer look.</p>
+      </div>
+
+      <div class="masonry mt-14" id="gallery-grid">
+        <!-- gallery items -->
+        <button class="gallery-item" data-title="Kitchen Deep Clean" data-file-before="assets/cookbefore.jpeg" data-file-after="assets/cookafter.jpeg" data-animate="scale-in">
+          <img src="assets/cookafter.jpeg" alt="Kitchen after deep cleaning" class="gallery-img">
+          <span class="gallery-tag">Before / After</span>
+        </button>
+        <button class="gallery-item tall" data-title="Bathroom Refresh" data-file-before="assets/bathroombefore.jpeg" data-file-after="assets/bathroomafter.jpeg" data-animate="scale-in">
+          <img src="assets/bathroomafter.jpeg" alt="Bathroom after deep cleaning" class="gallery-img">
+          <span class="gallery-tag">Before / After</span>
+        </button>
+        <button class="gallery-item" data-title="Bathtub Deep Clean" data-file-before="assets/bathtubbefore.jpeg" data-file-after="assets/bathtubafter.jpeg" data-animate="scale-in">
+          <img src="assets/bathtubafter.jpeg" alt="Bathtub after deep cleaning" class="gallery-img">
+          <span class="gallery-tag">Before / After</span>
+        </button>
+        <button class="gallery-item" data-title="Bedroom Refresh" data-file-before="assets/bedroombefore.jpeg" data-file-after="assets/bedroomafter.jpeg" data-animate="scale-in">
+          <img src="assets/bedroomafter.jpeg" alt="Bedroom after deep cleaning" class="gallery-img">
+          <span class="gallery-tag">Before / After</span>
+        </button>
+        <button class="gallery-item tall" data-title="Closet Organization" data-file-before="assets/closetbefore.jpeg" data-file-after="assets/closetafter.png" data-animate="scale-in">
+          <img src="assets/closetafter.png" alt="Closet after organization and cleaning" class="gallery-img">
+          <span class="gallery-tag">Before / After</span>
+        </button>
+        <button class="gallery-item" data-title="Oven Deep Clean" data-file-before="assets/ovenbefore.jpeg" data-file-after="assets/ovenafter.jpeg" data-animate="scale-in">
+          <img src="assets/ovenafter.jpeg" alt="Oven after deep cleaning" class="gallery-img">
+          <span class="gallery-tag">Before / After</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightbox-title">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close image">&times;</button>
+      <h3 id="lightbox-title" class="font-display font-700 text-white text-xl mb-4"></h3>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="lightbox-panel">
+          <span class="panel-tag">Before</span>
+          <img id="lightbox-before" class="lightbox-img" alt="Before">
+        </div>
+        <div class="lightbox-panel">
+          <span class="panel-tag panel-tag-mint">After</span>
+          <img id="lightbox-after" class="lightbox-img" alt="After">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ VIDEOS ============ -->
+  <section id="videos" class="section-pad bg-white">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="section-head" data-animate="fade-up">
+        <span class="eyebrow"><span class="eyebrow-mark">✦</span> Video Showcase</span>
+        <h2 class="section-title">Watch the Sirena 21 Difference</h2>
+        <p class="section-sub">A quick look at how our teams work — and the results they leave behind.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+        <button class="video-card" data-video="assets/editvideo1.mov" data-title="Stove & Oven Deep Clean" data-animate="fade-up" data-delay="0">
+          <span class="video-thumb">
+            <video class="video-preview" src="assets/editvideo1.mov" muted preload="metadata" playsinline aria-hidden="true"></video>
+            <span class="play-btn" aria-hidden="true">▶</span>
+          </span>
+          <span class="video-info">
+            <span class="video-title">Stove & Oven Deep Clean</span>
+            <span class="video-desc">Watch baked-on grease and grime disappear from a stovetop and oven, inside and out.</span>
+          </span>
+        </button>
+
+        <button class="video-card" data-video="assets/editvideo2.mov" data-title="The Details That Matter" data-animate="fade-up" data-delay="100">
+          <span class="video-thumb">
+            <video class="video-preview" src="assets/editvideo2.mov" muted preload="metadata" playsinline aria-hidden="true"></video>
+            <span class="play-btn" aria-hidden="true">▶</span>
+          </span>
+          <span class="video-info">
+            <span class="video-title">The Details That Matter</span>
+            <span class="video-desc">A closer look at the small touches — corners, edges, and hidden spots — that set Sirena 21 apart.</span>
+          </span>
+        </button>
+
+        <button class="video-card" data-video="assets/editvideo3.mov" data-title="Air Vent Dust Removal" data-animate="fade-up" data-delay="200">
+          <span class="video-thumb">
+            <video class="video-preview" src="assets/editvideo3.mov" muted preload="metadata" playsinline aria-hidden="true"></video>
+            <span class="play-btn" aria-hidden="true">▶</span>
+          </span>
+          <span class="video-info">
+            <span class="video-title">Air Vent Dust Removal</span>
+            <span class="video-desc">Built-up dust cleared from air vents for a fresher, healthier home.</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video modal -->
+  <div id="video-modal" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="video-modal-title">
+    <div class="lightbox-inner lightbox-inner-narrow">
+      <button class="lightbox-close" id="video-modal-close" aria-label="Close video">&times;</button>
+      <h3 id="video-modal-title" class="font-display font-700 text-white text-xl mb-4"></h3>
+      <div class="video-player-frame">
+        <video id="video-modal-player" controls playsinline></video>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section id="testimonials" class="section-pad bg-ocean relative overflow-hidden">
+    <div class="sparkle-field" aria-hidden="true">
+      <span class="sparkle s1 sparkle-light">✦</span>
+      <span class="sparkle s2 sparkle-light">✦</span>
+    </div>
+    <div class="max-w-4xl mx-auto px-5 lg:px-8 relative">
+      <div class="section-head" data-animate="fade-up">
+        <span class="eyebrow eyebrow-light"><span class="eyebrow-mark">✦</span> Testimonials</span>
+        <h2 class="section-title !text-white">Homeowners Trust Sirena 21</h2>
+      </div>
+
+      <div class="testimonial-carousel mt-14" id="testimonial-carousel">
+        <div class="testimonial-track" id="testimonial-track">
+
+          <blockquote class="testimonial-slide">
+            <div class="avatar-placeholder">SA</div>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Thank you again for your service — it was excellent! Communication from start to finish was great, and my bathrooms look brand new and smell amazing 🤩 Prices are worth every penny 🥰"</p>
+            <footer class="testimonial-footer">
+              <span class="font-display font-600">Savannah</span>
+              <span class="text-sm text-white/70">Winter Garden, FL</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-slide">
+            <div class="avatar-placeholder">MF</div>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"I wanted to say thank you so much for the incredible deep cleaning you did. You spent seven hours making my home sparkle, and it truly shows — everything looks spotless, smells amazing, and every detail was handled with such care and professionalism. I loved the results so much I've decided to have you come every two weeks! 💛✨"</p>
+            <footer class="testimonial-footer">
+              <span class="font-display font-600">Marisol Fernández</span>
+              <span class="text-sm text-white/70">Windermere, FL</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-slide">
+            <div class="avatar-placeholder">CM</div>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Just wanted to say thank you for doing such a great job! You guys are awesome and I'm super thankful for you both. 🙏🏻"</p>
+            <footer class="testimonial-footer">
+              <span class="font-display font-600">Carlos Medina</span>
+              <span class="text-sm text-white/70">Kissimmee, FL</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-slide">
+            <div class="avatar-placeholder">PA</div>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"We wanted to thank you so much for today's cleaning — we're very happy with the results. We asked for a basic cleaning and it was amazing; I can't even imagine how great the deep cleaning must be. Everything smells wonderful, and you can truly tell you clean with care and love. We'll definitely be booking again. ✨"</p>
+            <footer class="testimonial-footer">
+              <span class="font-display font-600">Priya Anand</span>
+              <span class="text-sm text-white/70">Ocoee, FL</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-slide">
+            <div class="avatar-placeholder">BF</div>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"I hired Sirena for a deep cleaning of my home. I'm very detailed, and every January I spend a week cleaning top to bottom — but I'm pregnant this year, so I couldn't do it myself. What I really appreciated is that they came out first to understand exactly what I wanted, listened to my full list, and matched the quality I was looking for. They spent two days at my home, and I've never been happier with a cleaning service — toilet seats removed, drains and baseboards cleaned, even inside and behind the refrigerator. My home is so clean and ready for our new baby. Thank you so much!"</p>
+            <footer class="testimonial-footer">
+              <span class="font-display font-600">Bianca Ferreira</span>
+              <span class="text-sm text-white/70">St. Cloud, FL</span>
+            </footer>
+          </blockquote>
+
+        </div>
+
+        <div class="carousel-controls">
+          <button id="carousel-prev" class="carousel-btn" aria-label="Previous testimonial">←</button>
+          <div class="carousel-dots" id="carousel-dots"></div>
+          <button id="carousel-next" class="carousel-btn" aria-label="Next testimonial">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATISTICS ============ -->
+  <section class="section-pad bg-white">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+        <div class="stat-card" data-animate="fade-up" data-delay="0">
+          <p class="stat-number" data-count="500" data-suffix="+">0</p>
+          <p class="stat-label">Homes Cleaned</p>
+        </div>
+        <div class="stat-card" data-animate="fade-up" data-delay="100">
+          <p class="stat-number" data-count="98" data-suffix="%">0</p>
+          <p class="stat-label">Customer Satisfaction</p>
+        </div>
+        <div class="stat-card" data-animate="fade-up" data-delay="200">
+          <p class="stat-number" data-count="6" data-suffix="+">0</p>
+          <p class="stat-label">Years Experience</p>
+        </div>
+        <div class="stat-card" data-animate="fade-up" data-delay="300">
+          <p class="stat-number" data-count="6" data-suffix=" Days">0</p>
+          <p class="stat-label">Availability</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta-section relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-5 lg:px-8 text-center relative" data-animate="fade-up">
+      <h2 class="font-display font-800 text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
+        Ready for a Spotless Home?
+      </h2>
+      <p class="mt-5 text-white/85 text-lg max-w-xl mx-auto">
+        Tell us about your space and get a free, no-obligation estimate within one business day.
+      </p>
+      <a href="#contact" class="btn-cta mt-9">Get My Free Estimate</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section-pad bg-cardgray">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="section-head" data-animate="fade-up">
+        <span class="eyebrow"><span class="eyebrow-mark">✦</span> Contact</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-sub">Have a question or ready to book a cleaning? Reach us directly — we typically respond within one business day.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-8 mt-14">
+
+        <!-- Direct contact cards -->
+        <div class="lg:col-span-3" data-animate="fade-right">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <a href="tel:+18572611685" class="contact-card">
+              <span class="contact-card-icon">☎</span>
+              <span class="contact-card-label">Call Us</span>
+              <span class="contact-card-value">(857) 261-1685</span>
+            </a>
+            <a href="mailto:sirena21inccleaning@gmail.com" class="contact-card">
+              <span class="contact-card-icon">✉</span>
+              <span class="contact-card-label">Email Us</span>
+              <span class="contact-card-value">sirena21inccleaning@gmail.com</span>
+            </a>
+            <div class="contact-card contact-card-static">
+              <span class="contact-card-icon">◷</span>
+              <span class="contact-card-label">Business Hours</span>
+              <span class="contact-card-value">Mon – Sat: 8 AM – 6 PM<br>Sun: By appointment</span>
+            </div>
+            <div class="contact-card contact-card-static">
+              <span class="contact-card-icon">⌂</span>
+              <span class="contact-card-label">Service Area</span>
+              <span class="contact-card-value">Orange &amp; Osceola County, FL</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-4 mt-8">
+            <a href="tel:+18572611685" class="btn-primary btn-lg">Call Now</a>
+            <a href="mailto:sirena21inccleaning@gmail.com" class="btn-secondary btn-lg">Email Us</a>
+          </div>
+
+          <div class="flex gap-3 mt-8">
+            <a href="https://www.facebook.com/profile.php?id=61577821227376&locale=pt_BR" class="social-icon" aria-label="Sirena 21 on Facebook">f</a>
+            <a href="https://www.instagram.com/sirena.inc/" class="social-icon" aria-label="Sirena 21 on Instagram">◎</a>
+            <a href="#" class="social-icon" aria-label="Sirena 21 on Google">G</a>
+          </div>
+        </div>
+
+      <!-- Map -->
+      <div class="lg:col-span-2" data-animate="fade-left">
+          <div class="map-placeholder map-placeholder-tall">
+              <img
+                  src="assets/counties.png"
+                  alt="Orange and Osceola County Service Area"
+                  class="w-full h-full object-cover rounded-2xl"
+              >
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-16">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <a href="#home" class="flex items-center gap-3 mb-4">
+          <img src="assets/logosirena.png" alt="Sirena 21 Inc. logo" class="h-12 w-12 object-contain">
+          <span class="font-display font-700 text-white">Sirena 21 <span class="text-mint">Inc.</span></span>
+        </a>
+        <p class="text-white/60 text-sm leading-relaxed">Premium residential cleaning across Florida, trusted by hundreds of homeowners.</p>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#areas">Service Areas</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Regular Cleaning</a></li>
+          <li><a href="#services">Deep Cleaning</a></li>
+          <li><a href="#services">Move-In / Move-Out</a></li>
+          <li><a href="#services">Airbnb Cleaning</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Legal</h4>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+        <div class="flex gap-3 mt-5">
+          <a href="https://www.facebook.com/profile.php?id=61577821227376&locale=pt_BR" class="social-icon social-icon-dark" aria-label="Sirena 21 on Facebook">f</a>
+          <a href="https://www.instagram.com/sirena.inc/" class="social-icon social-icon-dark" aria-label="Sirena 21 on Instagram">◎</a>
+          <a href="#" class="social-icon social-icon-dark" aria-label="Sirena 21 on Google">G</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Sirena 21 Inc. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
