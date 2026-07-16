@@ -275,6 +275,96 @@
     });
   }
 
+  /* ---------- Services: clickable cards -> details modal ---------- */
+  var serviceData = {
+    residential: {
+      title: 'Residential Cleaning',
+      description: 'Professional, reliable, and detail-oriented cleaning for your home.',
+      items: [
+        'Kitchen Cleaning',
+        'Bathroom Sanitizing',
+        'Dusting All Surfaces',
+        'Vacuum & Mop Floors',
+        'Bedroom & Living Area Cleaning',
+        'Trash Removal',
+        'Light Tidying & Finishing Touches'
+      ]
+    },
+    deep: {
+      title: 'Deep Cleaning',
+      description: 'A detailed top-to-bottom cleaning designed to refresh your entire home.',
+      items: [
+        'Baseboards & Doors',
+        'Detailed Bathroom Scrubbing',
+        'Kitchen Deep Sanitizing',
+        'Cabinet Exterior Cleaning',
+        'Light Fixtures & Ceiling Fans',
+        'Dusting High & Low Areas',
+        'Vacuum Under Furniture',
+        'Detailed Floor Cleaning',
+        'Spot Cleaning Walls',
+        'Trash Removal'
+      ]
+    },
+    movinout: {
+      title: 'Move In / Move Out Cleaning',
+      description: 'Perfect for preparing your home for a fresh start or final inspection.',
+      items: [
+        'Deep Cleaning Throughout the Home',
+        'Inside Cabinets & Drawers',
+        'Inside Fridge & Oven',
+        'Bathrooms Fully Sanitized',
+        'Baseboards, Doors & Trim Cleaned',
+        'Floors Vacuumed & Mopped',
+        'Dust Removal from All Surfaces',
+        'Window & Mirror Cleaning',
+        'Trash Removal'
+      ]
+    },
+    postconstruction: {
+      title: 'Post-Construction Cleaning',
+      description: 'Detailed cleaning to leave your newly built or renovated space spotless and move-in ready.',
+      items: [
+        'Construction Dust Removal',
+        'Detailed Surface Cleaning',
+        'Baseboards, Doors & Trim Cleaned',
+        'Window & Glass Cleaning',
+        'Cabinets & Countertops Wiped',
+        'Bathrooms Fully Sanitized',
+        'Floors Vacuumed & Mopped',
+        'Light Fixtures & Fans Dusted'
+      ]
+    }
+  };
+
+  var serviceModal = document.getElementById('service-modal');
+  var serviceModalClose = document.getElementById('service-modal-close');
+  var serviceModalTitle = document.getElementById('service-modal-title');
+  var serviceModalDesc = document.getElementById('service-modal-desc');
+  var serviceModalList = document.getElementById('service-modal-list');
+
+  document.querySelectorAll('.service-card').forEach(function (card) {
+    card.addEventListener('click', function () {
+      var data = serviceData[card.getAttribute('data-service')];
+      if (!data) return;
+      serviceModalTitle.textContent = data.title;
+      serviceModalDesc.textContent = data.description;
+      serviceModalList.innerHTML = '';
+      data.items.forEach(function (item) {
+        var li = document.createElement('li');
+        li.textContent = item;
+        serviceModalList.appendChild(li);
+      });
+      openModal(serviceModal);
+    });
+  });
+  if (serviceModalClose) {
+    serviceModalClose.addEventListener('click', function () { closeModal(serviceModal); });
+  }
+  if (serviceModal) {
+    serviceModal.addEventListener('click', function (e) { if (e.target === serviceModal) closeModal(serviceModal); });
+  }
+
   /* ---------- Gallery lightbox ---------- */
   var lightbox = document.getElementById('lightbox');
   var lightboxClose = document.getElementById('lightbox-close');
@@ -331,6 +421,7 @@
     if (e.key === 'Escape') {
       closeModal(lightbox);
       closeModal(videoModal);
+      closeModal(serviceModal);
       stopVideoPlayer();
     }
   });

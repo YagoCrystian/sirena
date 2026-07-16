@@ -230,7 +230,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background:#fff; border-radius:1.5rem; padding:2rem 1.75rem;
   box-shadow:0 10px 26px -18px rgba(13,59,102,0.15);
   transition:transform .35s var(--ease), box-shadow .35s var(--ease);
-  display:flex; flex-direction:column;
+  display:flex; flex-direction:column; text-align:left; border:none; cursor:pointer;
+  width:100%;
 }
 .service-card:hover{ transform:translateY(-8px) scale(1.015); box-shadow:0 26px 44px -18px rgba(13,59,102,0.28); }
 .service-icon{
@@ -245,7 +246,29 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   margin-top:1.1rem; font-family:'Poppins',sans-serif; font-weight:600; font-size:.88rem;
   color:var(--turquoise); transition:gap .25s var(--ease), color .25s var(--ease);
 }
-.service-link:hover{ color:var(--ocean); }
+.service-card:hover .service-link{ color:var(--ocean); }
+
+/* Service details modal */
+.service-modal-card{
+  background:#fff; border-radius:1.5rem; padding:2.25rem 2rem;
+  max-height:80vh; overflow-y:auto;
+}
+.service-modal-title{
+  font-family:'Poppins',sans-serif; font-weight:700; font-size:1.5rem; color:var(--ocean);
+}
+.service-modal-desc{ color:var(--slate-soft); margin-top:.6rem; font-size:1rem; line-height:1.55; }
+.service-modal-list{
+  margin-top:1.5rem; display:grid; gap:.7rem;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+}
+.service-modal-list li{
+  display:flex; align-items:flex-start; gap:.6rem; font-size:.92rem; color:var(--slate);
+}
+.service-modal-list li::before{
+  content:'✓'; flex-shrink:0; width:1.4rem; height:1.4rem; border-radius:50%;
+  background:rgba(18,150,219,0.12); color:var(--ocean); font-size:.75rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center; margin-top:.1rem;
+}
 
 /* ============ SERVICE AREAS ============ */
 .area-chip{
@@ -265,6 +288,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   box-shadow:0 26px 50px -18px rgba(13,59,102,0.35);
 }
 .map-placeholder-tall{ aspect-ratio:3/4; border-radius:1.5rem; }
+
+.contact-map-frame{
+  overflow:hidden; background:#fff;
+  box-shadow:0 26px 50px -18px rgba(13,59,102,0.25);
+  border:1px solid rgba(13,59,102,0.06);
+}
+.contact-map-img{ width:100%; height:100%; object-fit:cover; display:block; }
 
 /* ============ AREA SEARCH ============ */
 .area-search-wrap{ position:relative; margin-bottom:1.25rem; }

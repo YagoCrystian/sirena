@@ -162,7 +162,7 @@
           </div>
           <div class="w-px h-10 bg-ocean/10"></div>
           <div>
-            <p class="font-display font-700 text-2xl text-ocean">6+</p>
+            <p class="font-display font-700 text-2xl text-ocean">10+</p>
             <p class="text-sm text-slate-soft">Years experience</p>
           </div>
         </div>
@@ -272,69 +272,53 @@
       <div class="section-head" data-animate="fade-up">
         <span class="eyebrow"><span class="eyebrow-mark">✦</span> Services</span>
         <h2 class="section-title">A Cleaning Plan for Every Kind of Home</h2>
-        <p class="section-sub">From a weekly refresh to a full move-out deep clean, choose the service that fits your space.</p>
+        <p class="section-sub">Tap any service to see everything it includes.</p>
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14" id="services-grid">
-        <!-- Services injected via markup for SEO -->
-        <article class="service-card" data-animate="fade-up" data-delay="0">
+        <button class="service-card" data-service="residential" data-animate="fade-up" data-delay="0">
           <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v4H4zM4 10h16v10H4z"/></svg></div>
-          <h3 class="service-title">Regular Cleaning</h3>
-          <p class="service-text">Routine upkeep that keeps every room fresh, dusted, and organized.</p>
-          <a href="#contact" class="service-link">Learn More →</a>
-        </article>
+          <h3 class="service-title">Residential Cleaning</h3>
+          <p class="service-text">Keep your home consistently fresh with recurring professional cleaning tailored to your lifestyle.</p>
+          <span class="service-link">View Details →</span>
+        </button>
 
-        <article class="service-card" data-animate="fade-up" data-delay="50">
+        <button class="service-card" data-service="deep" data-animate="fade-up" data-delay="50">
           <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20l6-6M14 4l6 6M9 9l6 6M4 4l4 4M20 20l-4-4"/></svg></div>
           <h3 class="service-title">Deep Cleaning</h3>
-          <p class="service-text">A top-to-bottom reset for baseboards, grout, appliances, and every hidden corner.</p>
-          <a href="#contact" class="service-link">Learn More →</a>
-        </article>
+          <p class="service-text">A meticulous top-to-bottom service that restores every room to its best condition.</p>
+          <span class="service-link">View Details →</span>
+        </button>
 
-        <article class="service-card" data-animate="fade-up" data-delay="100">
+        <button class="service-card" data-service="movinout" data-animate="fade-up" data-delay="100">
           <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21l6-6M3 21v-5M3 21h5M21 3l-6 6M21 3h-5M21 3v5"/></svg></div>
-          <h3 class="service-title">Move-In Cleaning</h3>
-          <p class="service-text">Start fresh in a spotless, sanitized home before the boxes even arrive.</p>
-          <a href="#contact" class="service-link">Learn More →</a>
-        </article>
+          <h3 class="service-title">Move In / Move Out</h3>
+          <p class="service-text">Whether you're moving in or moving out, we make sure every surface is spotless and ready for its next chapter.</p>
+          <span class="service-link">View Details →</span>
+        </button>
 
-        <article class="service-card" data-animate="fade-up" data-delay="150">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 3l-6 6M21 3v5M21 3h-5M3 21l6-6M3 21v-5M3 21h5"/></svg></div>
-          <h3 class="service-title">Move-Out Cleaning</h3>
-          <p class="service-text">Leave your space in perfect condition for the next owner — or your deposit.</p>
-          <a href="#contact" class="service-link">Learn More →</a>
-        </article>
-
-        <article class="service-card" data-animate="fade-up" data-delay="0">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10l9-7 9 7v10a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg></div>
-          <h3 class="service-title">Airbnb Cleaning</h3>
-          <p class="service-text">Fast, reliable turnovers between guests, built around your booking calendar.</p>
-          <a href="#contact" class="service-link">Learn More →</a>
-        </article>
-
-        <article class="service-card" data-animate="fade-up" data-delay="50">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4M9 7h1M14 7h1M9 11h1M14 11h1"/></svg></div>
-          <h3 class="service-title">Apartment Cleaning</h3>
-          <p class="service-text">Efficient, thorough cleans tailored to condos and apartment living.</p>
-          <a href="#contact" class="service-link">Learn More →</a>
-        </article>
-
-        <article class="service-card" data-animate="fade-up" data-delay="100">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></div>
-          <h3 class="service-title">Office Cleaning</h3>
-          <p class="service-text">Keep your home office or small workspace sharp, sanitized, and client-ready.</p>
-          <a href="#contact" class="service-link">Learn More →</a>
-        </article>
-
-        <article class="service-card" data-animate="fade-up" data-delay="150">
+        <button class="service-card" data-service="postconstruction" data-animate="fade-up" data-delay="150">
           <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21h16M6 21V9l6-6 6 6v12M9 21v-6h6v6"/></svg></div>
-          <h3 class="service-title">Post-Construction</h3>
-          <p class="service-text">Dust, debris, and residue removed so your renovated space shines like new.</p>
-          <a href="#contact" class="service-link">Learn More →</a>
-        </article>
+          <h3 class="service-title">Post-Construction Cleaning</h3>
+          <p class="service-text">Construction leaves more than dust behind — we clear every trace of it, leaving your newly built or renovated space polished, sanitized, and ready to enjoy.</p>
+          <span class="service-link">View Details →</span>
+        </button>
       </div>
     </div>
   </section>
+
+  <!-- Service details modal -->
+  <div id="service-modal" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="service-modal-title">
+    <div class="lightbox-inner lightbox-inner-narrow">
+      <button class="lightbox-close" id="service-modal-close" aria-label="Close service details">&times;</button>
+      <div class="service-modal-card">
+        <h3 id="service-modal-title" class="service-modal-title"></h3>
+        <p id="service-modal-desc" class="service-modal-desc"></p>
+        <ul id="service-modal-list" class="service-modal-list"></ul>
+        <a href="#contact" class="btn-primary btn-lg mt-2" id="service-modal-cta">Get a Free Estimate</a>
+      </div>
+    </div>
+  </div>
 
   <!-- ============ SERVICE AREAS ============ -->
   <section id="areas" class="section-pad bg-white">
@@ -583,20 +567,20 @@
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
-        <button class="video-card" data-video="assets/editvideo1.mov" data-title="Stove & Oven Deep Clean" data-animate="fade-up" data-delay="0">
+        <button class="video-card" data-video="assets/editvideo1.mp4" data-title="Stove &amp; Oven Deep Clean" data-animate="fade-up" data-delay="0">
           <span class="video-thumb">
-            <video class="video-preview" src="assets/editvideo1.mov" muted preload="metadata" playsinline aria-hidden="true"></video>
+            <video class="video-preview" src="assets/editvideo1.mp4" muted preload="metadata" playsinline aria-hidden="true"></video>
             <span class="play-btn" aria-hidden="true">▶</span>
           </span>
           <span class="video-info">
-            <span class="video-title">Stove & Oven Deep Clean</span>
+            <span class="video-title">Stove &amp; Oven Deep Clean</span>
             <span class="video-desc">Watch baked-on grease and grime disappear from a stovetop and oven, inside and out.</span>
           </span>
         </button>
 
-        <button class="video-card" data-video="assets/editvideo2.mov" data-title="The Details That Matter" data-animate="fade-up" data-delay="100">
+        <button class="video-card" data-video="assets/editvideo2.mp4" data-title="The Details That Matter" data-animate="fade-up" data-delay="100">
           <span class="video-thumb">
-            <video class="video-preview" src="assets/editvideo2.mov" muted preload="metadata" playsinline aria-hidden="true"></video>
+            <video class="video-preview" src="assets/editvideo2.mp4" muted preload="metadata" playsinline aria-hidden="true"></video>
             <span class="play-btn" aria-hidden="true">▶</span>
           </span>
           <span class="video-info">
@@ -605,9 +589,9 @@
           </span>
         </button>
 
-        <button class="video-card" data-video="assets/editvideo3.mov" data-title="Air Vent Dust Removal" data-animate="fade-up" data-delay="200">
+        <button class="video-card" data-video="assets/editvideo3.mp4" data-title="Air Vent Dust Removal" data-animate="fade-up" data-delay="200">
           <span class="video-thumb">
-            <video class="video-preview" src="assets/editvideo3.mov" muted preload="metadata" playsinline aria-hidden="true"></video>
+            <video class="video-preview" src="assets/editvideo3.mp4" muted preload="metadata" playsinline aria-hidden="true"></video>
             <span class="play-btn" aria-hidden="true">▶</span>
           </span>
           <span class="video-info">
@@ -765,7 +749,7 @@
             <a href="mailto:sirena21inccleaning@gmail.com" class="contact-card">
               <span class="contact-card-icon">✉</span>
               <span class="contact-card-label">Email Us</span>
-              <span class="contact-card-value">sirena21inccleaning@gmail.com</span>
+              <span class="contact-card-value">sirena21inccleaning@gmail.comm</span>
             </a>
             <div class="contact-card contact-card-static">
               <span class="contact-card-icon">◷</span>
@@ -791,16 +775,12 @@
           </div>
         </div>
 
-      <!-- Map -->
-      <div class="lg:col-span-2" data-animate="fade-left">
-          <div class="map-placeholder map-placeholder-tall">
-              <img
-                  src="assets/counties.png"
-                  alt="Orange and Osceola County Service Area"
-                  class="w-full h-full object-cover rounded-2xl"
-              >
+        <!-- Map -->
+        <div class="lg:col-span-2" data-animate="fade-left">
+          <div class="contact-map-frame">
+            <img src="assets/counties.png" alt="Map of Orange County and Osceola County, Florida — Sirena 21's service area" class="contact-map-img">
           </div>
-      </div>
+        </div>
       </div>
     </div>
   </section>
