@@ -127,36 +127,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- Tailwind (Play CDN) -->
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          ocean:    { DEFAULT:'#0D3B66', light:'#1296DB', dark:'#092944' },
-          turquoise:{ DEFAULT:'#1296DB', light:'#4DB8E8' },
-          mint:     { DEFAULT:'#F45BA3', light:'#F8A0C9' },
-          slate:    { DEFAULT:'#22313F', soft:'#5B6B78' },
-          cardgray: '#F3F6F8'
-        },
-        fontFamily: {
-          display: ['Poppins','sans-serif'],
-          body: ['Inter','sans-serif']
-        },
-        boxShadow: {
-          soft: '0 10px 30px -10px rgba(13,59,102,0.15)',
-          softer: '0 4px 20px -6px rgba(13,59,102,0.12)',
-          lift: '0 20px 40px -12px rgba(13,59,102,0.28)'
-        },
-        borderRadius: {
-          xl2: '1.5rem'
-        }
-      }
-    }
-  }
-</script>
-
+<link rel="stylesheet" href="tailwind.css">
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -676,7 +647,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
         <button class="video-card" data-video="assets/editvideo1.mp4" data-title="Stove &amp; Oven Deep Clean" data-animate="fade-up" data-delay="0">
           <span class="video-thumb">
-            <video class="video-preview" src="assets/editvideo1.mp4" muted preload="metadata" playsinline aria-hidden="true"></video>
+            <video class="video-preview" src="assets/editvideo1.mp4" muted preload="none" playsinline aria-hidden="true"></video>
             <span class="play-btn" aria-hidden="true">▶</span>
           </span>
           <span class="video-info">
@@ -687,7 +658,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <button class="video-card" data-video="assets/editvideo2.mp4" data-title="The Details That Matter" data-animate="fade-up" data-delay="100">
           <span class="video-thumb">
-            <video class="video-preview" src="assets/editvideo2.mp4" muted preload="metadata" playsinline aria-hidden="true"></video>
+            <video class="video-preview" src="assets/editvideo2.mp4" muted preload="none" playsinline aria-hidden="true"></video>
             <span class="play-btn" aria-hidden="true">▶</span>
           </span>
           <span class="video-info">
@@ -698,7 +669,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <button class="video-card" data-video="assets/editvideo3.mp4" data-title="Air Vent Dust Removal" data-animate="fade-up" data-delay="200">
           <span class="video-thumb">
-            <video class="video-preview" src="assets/editvideo3.mp4" muted preload="metadata" playsinline aria-hidden="true"></video>
+            <video class="video-preview" src="assets/editvideo3.mp4" muted preload="none" playsinline aria-hidden="true"></video>
             <span class="play-btn" aria-hidden="true">▶</span>
           </span>
           <span class="video-info">
